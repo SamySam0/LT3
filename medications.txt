@@ -1,0 +1,3 @@
+aspirin:55
+senna:40
+ibuprofen:100
