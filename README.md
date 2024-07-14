@@ -18,7 +18,7 @@ Then, required packages must be installed by running the following command at th
 ## Usage: Generate data
 In order to generate syntethic data, you must follow the steps given below:
 
-1. First, you should download the LT3 model, named `lt3_model.py`, from the follow hugging face page: https://huggingface.co/SamySam0/LT3 . The model must be placed at the root of this repository with the same name.
+1. First, you should download the LT3 model, named `lt3_model.py`, from the following Hugging Face page: https://huggingface.co/SamySam0/LT3 . The model must be placed at the root of this repository with the same name.
 
 2. Second, you should create/edit the file named `medications.txt` at the root of the repository. This file may include medication names as well as the number of prescriptions to generate for each medication. Each line must provide a medication name and its number of generations with the form `name:amount` (e.g, `aspirin:5` to get five different prescriptions of aspirin).
 
