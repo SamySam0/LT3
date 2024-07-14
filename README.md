@@ -32,6 +32,36 @@ In order to generate syntethic data, you must follow the steps given below:
 
 3. Finally, the generated prescriptions will be available in the desired output file. Note that the number of desired prescriptions may exceed the maximum possible generations if you asked for too many prescriptions and saturated the decoding tree, or have over-restricted the model with your chosen hyperparameters (arguments). In this case, some prescriptions may be given as `-` to signify that they could not be generated.
 
+
+## Evaluation results
+
+### Lexical Similarity Evaluation against References
+
+The results below show that LT3’s generations are the closest match to the reference samples. We used multi-reference evaluation to consolidate our results. Higher scores are better.
+
+| Models   | BLEU  | ROUGE-1 | ROUGE-2 | ROUGE-L | BERTScore |
+|----------|-------|---------|---------|---------|-----------|
+| T5 Small | 71.75 | 76.16   | 66.24   | 75.55   | 0.70      |
+| T5 Base  | 71.98 | 76.28   | 66.30   | 75.45   | 0.70      |
+| T5 Large | 69.89 | 75.07   | 65.19   | 74.22   | 0.68      |
+| LT3      | **78.52** | **78.16**   | **68.72**   | **77.55**   | **0.72**      |
+
+### Lexical Diversity Evaluation within Generated Outputs
+
+The results below measure the diversity between models' outputs. For each label, we measured the Jaccard similarity score of the generations of our models. A higher Jaccard Score indicates more similarity between the two populations, while a lower score indicates better diversity in our tasks.
+
+|       | Median Jaccard Score | Average Jaccard Score |
+|-------|-----------------------|-----------------------|
+| LT3   | **0.650**             | **0.652**             |
+| T5 Base | 0.658               | 0.660                 |
+
+
+### Downstream NER Evaluation
+
+The results below demonstrate the efficiency of our generated synthetic dataset to train an NER model compared to when using real data.
+
+![Downstream NER Evaluation](docs/imgs/NER_Results_Graph.png)
+
 ## Thank you
 Feel free to use LT3 for any research purpose. 
 
