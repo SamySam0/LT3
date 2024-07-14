@@ -5,7 +5,7 @@ This work was presented at *NeurIPS 2023's Workshop on Synthetic Data Generation
 
 Our pre-print can be found here: https://arxiv.org/abs/2310.19727.
 
-*Authors: Samuel Belkadi, Nicolo Micheletti, Lifeng Han, Warren Del-Pinto, Goran Nenadic*
+*Authors: Samuel Belkadi, Nicolo Micheletti, Lifeng Han, Warren Del-Pinto, Goran Nenadic.*
 
 ## Setup
 This repository is a ready-to-run version of LT3. In order to generate synthetic data, the following requirements must be met:
