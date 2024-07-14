@@ -18,9 +18,11 @@ Then, required packages must be installed by running the following command at th
 ## Usage: Generate data
 In order to generate syntethic data, you must follow the steps given below:
 
-1. First, you should create/edit the file named `medications.txt` at the root of the repository. This file may include medication names as well as the number of prescriptions to generate for each medication. Each line must provide a medication name and its number of generations with the form `name:amount` (e.g, `aspirin:5` to get five different prescriptions of aspirin).
+1. First, you should download the LT3 model, named `lt3_model.py`, from the follow hugging face page: https://huggingface.co/SamySam0/LT3 . The model must be placed at the root of this repository with the same name.
 
-2. Then, the file `generate.py` must be called to generate the desired synthetic data. You can call this script using the command ```python3 generate.py``` where the following arguments can be added:
+2. Second, you should create/edit the file named `medications.txt` at the root of the repository. This file may include medication names as well as the number of prescriptions to generate for each medication. Each line must provide a medication name and its number of generations with the form `name:amount` (e.g, `aspirin:5` to get five different prescriptions of aspirin).
+
+3. Then, the file `generate.py` must be called to generate the desired synthetic data. You can call this script using the command ```python3 generate.py``` where the following arguments can be added:
     - -in (--input_path): path to input dictionnary's file (default: './medications.txt');
     - -out (--output_path): path to output file (default: './generations.json');
 
@@ -30,7 +32,7 @@ In order to generate syntethic data, you must follow the steps given below:
     - -a (--alpha): alpha value (hyperparameter) for beam search decoding (default: 0.6);
     - -tlp (--tree_length_product): tree length product for beam search decoding (default: 3);
 
-3. Finally, the generated prescriptions will be available in the desired output file. Note that the number of desired prescriptions may exceed the maximum possible generations if you asked for too many prescriptions and saturated the decoding tree, or have over-restricted the model with your chosen hyperparameters (arguments). In this case, some prescriptions may be given as `-` to signify that they could not be generated.
+4. Finally, the generated prescriptions will be available in the desired output file. Note that the number of desired prescriptions may exceed the maximum possible generations if you asked for too many prescriptions and saturated the decoding tree, or have over-restricted the model with your chosen hyperparameters (arguments). In this case, some prescriptions may be given as `-` to signify that they could not be generated.
 
 
 ## Evaluation results
