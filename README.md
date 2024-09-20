@@ -1,5 +1,5 @@
 # LT3
-LT3 is a novel Conditional Transformer designed for generating synthetic medical instructions as an alternative to real medical data, addressing data privacy restrictions and scracity issues. It has demonstrated better generation quality and diversity than Large Language Models (LLM), and the ability to effectively train NER model with performances comparable to those achieved with real data. On top of that, our research proposes a new Beam Search Decoding algorithm (B2SD) which outperformed state-of-the-art methods on our task.
+LT3 is a novel Conditional Transformer designed for generating synthetic medical prescriptions as an alternative to real medical data, addressing data privacy restrictions and scracity issues. It has demonstrated better generation quality and diversity than Large Language Models (LLM), and the ability to effectively train NER model with performances comparable to those achieved with real data. On top of that, our research proposes a new Beam Search Decoding algorithm (B2SD) which outperformed state-of-the-art methods on our task.
 
 This work was presented at *NeurIPS 2023's Workshop on Synthetic Data Generation with Generative AI*. 
 
