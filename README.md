@@ -67,4 +67,12 @@ The results below demonstrate the efficiency of our generated synthetic dataset 
 ## Thank you
 Feel free to use LT3 for any research purpose. 
 
-Please contact us if you have any questions, and **cite our work** whenever used.
+### If you use this repository, please cite:
+```
+@InProceedings{LT3,
+      title={Generating Medical Instructions with Conditional Transformer}, 
+      author={Samuel Belkadi and Nicolo Micheletti and Lifeng Han and Warren Del-Pinto and Goran Nenadic},
+      year={2023},
+      booktitle={SyntheticData4ML Workshop at NeurIPS 2023}
+}
+```
